@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clean Semantic HTML Structure</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <table width="100%" border="0" cellspacing="0" cellpadding="10">
+            <tr>
+                <td>
+                    <h1>DevDoc</h1>
+                </td>
+                <td align="right">
+                    <nav>
+                        <a href="#home">Home</a> &nbsp;|&nbsp; 
+                        <a href="#features">Features</a> &nbsp;|&nbsp; 
+                        <a href="#resources">Resources</a> &nbsp;|&nbsp; 
+                        <a href="#subscribe">Newsletter</a>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <hr>
+
+    <!-- Hero / Intro Section -->
+    <section id="home">
+        <center>
+            <h2>Pure Native Architecture</h2>
+            <p>A minimalist blueprint designed around text readability, structured data flow, and standard browser defaults.</p>
+            <p><a href="#features"><b>Explore Core Features &darr;</b></a></p>
+        </center>
+    </section>
+
+    <hr>
+
+    <!-- Main Content Layout Window -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="20">
+        <tr valign="top">
+            
+            <!-- Left Side: Primary Content -->
+            <td width="70%">
+                <main id="features">
+                    
+                    <article>
+                        <h2>1. Explicit Hierarchies</h2>
+                        <p>Published: July 12, 2026</p>
+                        <p>Native HTML tags tell engines exactly how data correlates. Using elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;aside&gt;</code> provides flawless context to assistive screen readers and search spiders right out of the box.</p>
+                    </article>
+
+                    <br><hr><br>
+
+                    <article>
+                        <h2>2. Native Interaction Elements</h2>
+                        <p>Published: July 10, 2026</p>
+                        <p>Forms parse user inputs natively without script frameworks. Standard forms collect organized values, structure them, and safely relay them back to server end-points using basic input patterns.</p>
+                        
+                        <h3>Interactive Demonstration Forms</h3>
+                        <form id="subscribe" action="#" method="post">
+                            <fieldset>
+                                <legend><b>Join Our Newsletter</b></legend>
+                                <p>
+                                    <label for="fname">First Name:</label> 
+                                    <input type="text" id="fname" name="firstname" required placeholder="Jane">
+                                </p>
+                                <p>
+                                    <label for="email">Email Address:</label> 
+                                    <input type="email" id="email" name="useremail" required placeholder="jane@example.com">
+                                </p>
+                                <p>
+                                    <label for="frequency">Updates Frequency:</label> 
+                                    <select id="frequency" name="update_freq">
+                                        <option value="daily">Daily Digests</option>
+                                        <option value="weekly">Weekly Summaries</option>
+                                        <option value="monthly">Monthly Announcements</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="feedback">Preferences / Notes:</label><br>
+                                    <textarea id="feedback" name="userfeedback" rows="4" cols="45" placeholder="Let us know what topics you prefer..."></textarea>
+                                </p>
+                                <p>
+                                    <input type="submit" value="Subscribe Now">
+                                    <input type="reset" value="Reset Fields">
+                                </p>
+                            </fieldset>
+                        </form>
+                    </article>
+
+                </main>
+            </td>
+
+            <!-- Right Side: Sidebar Navigation / References -->
+            <td width="30%" bgcolor="#f4f4f4">
+                <aside id="resources">
+                    <h3>Quick References</h3>
+                    <p>Static markup reduces network lag and parsing overhead on lower-end mobile chipsets.</p>
+                    
+                    <h4>Key Attributes:</h4>
+                    <ul>
+                        <li>Zero render-blocking scripts</li>
+                        <li>High accessibility scores</li>
+                        <li>Predictable document flow</li>
+                    </ul>
+
+                    <h4>Implementation Order:</h4>
+                    <ol>
+                        <li>Document Declaration</li>
+                        <li>Semantic Scaffolding</li>
+                        <li>Form Control Fields</li>
+                    </ol>
+                </aside>
+            </td>
+
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer>
+        <center>
+            <p>&copy; 2026 DevDoc Architecture.</p>
+        </center>
+    </footer>
+
+</body>
+</html>
