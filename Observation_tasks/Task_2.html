@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Styled Webpage</title>
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="grey.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Styled Webpage</h1>
+        <p>Demonstrating CSS3 Styling Concepts & HTML5 Canvas Graphics</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#canvas">Canvas Graphics</a></li>
+            <li><a href="#cards">Content Cards</a></li>
+            <li><a href="#about">About Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- Part A: HTML5 Canvas Section -->
+        <section id="canvas" class="canvas-section">
+            <h2>HTML5 Canvas Visuals</h2>
+            <canvas id="myCanvas" width="500" height="250">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+        </section>
+
+        <!-- Part B: Three Content Cards -->
+        <section id="cards">
+            <h2 class="section-title">Featured Concepts</h2>
+            <div class="cards-container">
+                
+                <!-- Card 1 -->
+                <div class="card">
+                    <h3>CSS3 Box Model</h3>
+                    <p>The CSS box model is a container that wraps around every HTML element. It consists of margins, borders, padding, and the actual content.</p>
+                    <button class="card-btn">Learn More</button>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <h3>Visual Enhancements</h3>
+                    <p>CSS3 introduces powerful visual capabilities such as linear/radial gradients, rounded corners, box shadows, and text shadow properties.</p>
+                    <button class="card-btn">Explore Visuals</button>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <h3>Interactive Transitions</h3>
+                    <p>Hover effects provide dynamic user feedback by smoothly animating colors, scaling elements, or adjusting shadows when interacted with.</p>
+                    <button class="card-btn">View Effects</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Styled Webpage | Designed with HTML5 & CSS3</p>
+    </footer>
+
+    <!-- Part A: JavaScript for Canvas Drawing -->
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // 1. Draw One Rectangle
+        ctx.fillStyle = "#3b82f6";
+        ctx.fillRect(40, 40, 120, 80);
+        ctx.strokeStyle = "#1e3c72";
+        ctx.lineWidth = 3;
+        ctx.strokeRect(40, 40, 120, 80);
+
+        // 2. Draw One Circle
+        ctx.beginPath();
+        ctx.arc(250, 80, 45, 0, 2 * Math.PI);
+        ctx.fillStyle = "#ef4444";
+        ctx.fill();
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = "#991b1b";
+        ctx.stroke();
+
+        // 3. Draw One Line
+        ctx.beginPath();
+        ctx.moveTo(350, 40);
+        ctx.lineTo(460, 120);
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = "#10b981";
+        ctx.stroke();
+
+        // 4. Display Name as Text
+        ctx.font = "bold 24px 'Segoe UI', sans-serif";
+        ctx.fillStyle = "#0f172a";
+        ctx.textAlign = "center";
+        ctx.fillText("Created by: Abhishek", 250, 200);
+    </script>
+
+</body>
+</html>
