@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANITS - College Information Portal</title>
+</head>
+<body>
+
+    <!-- PART D: Semantic Header & Navigation -->
+    <header>
+        <!-- PART B: ANITS Official Logo -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Anits_logo.jpg/960px-Anits_logo.jpg" 
+             alt="ANITS Logo" width="120">
+        <h1>Anil Neerukonda Institute of Technology & Sciences (ANITS)</h1>
+        <p>Permanently Affiliated to Andhra University | Approved by AICTE | Autonomous</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About ANITS</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#students">Student Details</a></li>
+            <li><a href="#register">Student Registration</a></li>
+            <li><a href="#media">Campus Media</a></li>
+            <!-- PART A: Hyperlinks -->
+            <li><a href="https://anits.org" target="_blank" rel="noopener noreferrer">Official ANITS Website</a></li>
+            <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google Search</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- PART D: Semantic Section & Article -->
+        <section id="about">
+            <article>
+                <h2>About Our Institution</h2>
+                <!-- PART A: Paragraphs & Text Formatting -->
+                <p>
+                    ANITS was established in the academic year <b>2001-02</b> by Dr. N.B.R. Prasad in memory of his late son <i>Anil Neerukonda</i>. 
+                    It is situated in a sprawling <u>12-acre green campus</u> at Sangivalasa, Visakhapatnam.
+                </p>
+                <p>
+                    The campus features advanced research centers focusing on reaction kinetics such as H<sub>2</sub>O synthesis and computing speeds up to 10<sup>9</sup> operations per second.
+                </p>
+                <!-- PART B: Relevant Campus Image -->
+                <img src="https://anits.org/static/images/campus.jpg" 
+                     alt="ANITS Main Campus Building Entrance" width="600">
+            </article>
+        </section>
+
+        <section id="departments">
+            <h2>Academic Programs & Guidelines</h2>
+            <!-- PART A: Unordered List -->
+            <h3>Offered B.Tech Branches (Unordered List)</h3>
+            <ul>
+                <li>Computer Science & Engineering (CSE)</li>
+                <li>Artificial Intelligence & Machine Learning (CSM)</li>
+                <li>Data Science (CSD)</li>
+                <li>Electronics & Communication Engineering (ECE)</li>
+                <li>Electrical & Electronics Engineering (EEE)</li>
+                <li>Mechanical Engineering (MECH)</li>
+                <li>Civil Engineering (CIVIL)</li>
+                <li>Chemical Engineering (CHEM)</li>
+            </ul>
+
+            <!-- PART A: Ordered List -->
+            <h3>ANITS Admission Process (Ordered List)</h3>
+            <ol>
+                <li>Qualify in the AP EAPCET / ECET entrance examination.</li>
+                <li>Participate in online web counseling conducted by APSCHE.</li>
+                <li>Select ANITS (College Code: ANIT) as your preferred choice.</li>
+                <li>Report to the ANITS Sangivalasa campus for document verification and fee payment.</li>
+            </ol>
+        </section>
+
+        <!-- PART B: Student Details Table -->
+        <section id="students">
+            <h2>ANITS Student Details Table</h2>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Roll No</th>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>321126510001</td>
+                        <td>K. Sai Verma</td>
+                        <td>CSE</td>
+                        <td>sai.verma@anits.edu.in</td>
+                    </tr>
+                    <tr>
+                        <td>321126512015</td>
+                        <td>P. Lakshmi Prasanna</td>
+                        <td>ECE</td>
+                        <td>lakshmi.p@anits.edu.in</td>
+                    </tr>
+                    <tr>
+                        <td>321126520042</td>
+                        <td>R. Tarun Kumar</td>
+                        <td>MECH</td>
+                        <td>tarun.r@anits.edu.in</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- PART C & D: Registration Form with HTML5 Input Types -->
+        <section id="register">
+            <h2>ANITS Student Registration Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Student Admission Registration</legend>
+
+                    <!-- Text Input -->
+                    <p>
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" placeholder="e.g. John Doe" required>
+                    </p>
+
+                    <!-- HTML5 Email -->
+                    <p>
+                        <label for="email">Student Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="student@anits.edu.in" required>
+                    </p>
+
+                    <!-- Password -->
+                    <p>
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="password" required>
+                    </p>
+
+                    <!-- HTML5 Date -->
+                    <p>
+                        <label for="dob">Date of Birth:</label><br>
+                        <input type="date" id="dob" name="dob" required>
+                    </p>
+
+                    <!-- HTML5 Number -->
+                    <p>
+                        <label for="age">Age:</label><br>
+                        <input type="number" id="age" name="age" min="16" max="30">
+                    </p>
+
+                    <!-- Radio Buttons -->
+                    <p>
+                        Gender:<br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </p>
+
+                    <!-- Checkboxes -->
+                    <p>
+                        Hobbies / Extra-Curriculars:<br>
+                        <input type="checkbox" id="coding" name="hobbies" value="coding">
+                        <label for="coding">Coding / Hackathons</label>
+                        <input type="checkbox" id="sports" name="hobbies" value="sports">
+                        <label for="sports">Sports / Athletics</label>
+                        <input type="checkbox" id="cultural" name="hobbies" value="cultural">
+                        <label for="cultural">Cultural Clubs</label>
+                    </p>
+
+                    <!-- Dropdown Select -->
+                    <p>
+                        <label for="branch">Select Branch:</label><br>
+                        <select id="branch" name="branch" required>
+                            <option value="">-- Choose Branch --</option>
+                            <option value="cse">Computer Science Engineering (CSE)</option>
+                            <option value="csm">CSE (AI & ML)</option>
+                            <option value="csd">CSE (Data Science)</option>
+                            <option value="ece">Electronics & Communication (ECE)</option>
+                            <option value="eee">Electrical & Electronics (EEE)</option>
+                            <option value="mech">Mechanical Engineering</option>
+                            <option value="civil">Civil Engineering</option>
+                            <option value="chem">Chemical Engineering</option>
+                        </select>
+                    </p>
+
+                    <!-- HTML5 Color -->
+                    <p>
+                        <label for="fav_color">Department Theme Color Preference:</label><br>
+                        <input type="color" id="fav_color" name="fav_color" value="#003366">
+                    </p>
+
+                    <!-- HTML5 Range -->
+                    <p>
+                        <label for="preparedness">EAPCET Preparation Confidence (1 to 10):</label><br>
+                        <input type="range" id="preparedness" name="preparedness" min="1" max="10">
+                    </p>
+
+                    <!-- Textarea -->
+                    <p>
+                        <label for="comments">Queries / Remarks:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="45" placeholder="Enter any specific queries regarding ANITS admissions..."></textarea>
+                    </p>
+
+                    <!-- Buttons -->
+                    <p>
+                        <input type="submit" value="Submit Registration">
+                        <input type="reset" value="Reset Form">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- PART D: Audio & Video & Iframe -->
+        <section id="media">
+            <h2>ANITS Campus Media & Virtual Tour</h2>
+            
+            <article>
+                <h3>ANITS College Anthem</h3>
+                <audio controls style="width: 100%; max-width: 400px;">
+                <source src="anits-anthem.mp3" type="audio/mpeg">
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+            </article>
+
+            <!-- PART D: Embedded YouTube Video -->
+            <article>
+                 <h3>ANITS Campus Tour Video</h3>
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/eS36IpEMTak" 
+                    title="ANITS Video" 
+                    style="border: 0;" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </article>
+        </section>
+    </main>
+
+    <!-- PART D: Semantic Footer -->
+    <footer>
+        <hr>
+        <p>&copy; 2026 Anil Neerukonda Institute of Technology & Sciences (ANITS), Sangivalasa, Visakhapatnam. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
